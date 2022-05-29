@@ -1,3 +1,7 @@
 name: tnc-py34
 dependencies:
-  - python=3.4   # o
+  - python=3.4   # or 2.7
+  - pyqt=4.*
+  - natsort=5.0.*
+  - scikit-image
+  - 
