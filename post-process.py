@@ -85,3 +85,19 @@ if __name__ == '__main__':
         plt.imshow(clean_mask[X_LOW:X_UPP,
                               Y_LOW:Y_UPP], vmin=min_px, vmax=max_px)
     else:
+        plt.imshow(clean_mask, vmin=min_px, vmax=max_px)
+    plt.title('median filter mask (%dx%d)' %
+              (median_filter_size, median_filter_size))
+
+    morphology_size = 3 # Hyperparameter
+    clean_mask = ndimage.grey_dilation(
+        clean_mask, size=(morphology_size, morphology_size))
+
+    plt.figure()
+    if args.zoom:
+        plt.imshow(clean_mask[X_LOW:X_UPP,
+                              Y_LOW:Y_UPP], vmin=min_px, vmax=max_px)
+    else:
+        plt.imshow(clean_mask, vmin=min_px, vmax=max_px)
+    plt.title('morphology (%dx%d)' % (morphology_size, morphology_size))
+    plt.show()
