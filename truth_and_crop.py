@@ -133,3 +133,81 @@ class TruthAndCropApp(QtGui.QMainWindow, Ui_MainWindow):
         self.showSuperPx = False
         self.superPxGenerated = False
         self.drawing_list = []
+        self.crop_list = []
+        self.labeled_superpixel_list = []
+        self.progressBarFloatValue = 0.0
+        self.progressBar.reset()
+        self.cropping = False
+        self.textEditMode.setText("Label")
+
+    def __handle_wnd_box(self, event):
+        self.w = self.wndBox.value()
+
+    def __handle_ds_box(self, event):
+        self.ds = self.dsBox.value()
+
+    def __handle_nseg_box(self, event):
+        self.nseg = self.segmentsBox.value()
+        self.__reset_state()
+
+    def __handle_sigma_box(self, event):
+        self.sigma = self.sigmaBox.value()
+
+    def __handle_compactness_box(self, event):
+        self.compactness = self.compactnessBox.value()
+
+    def __handle_enforce_cbox(self, event):
+        self.enforce = self.enforceConnectivityBox.isChecked()
+
+    def __handle_next_btn(self, event):
+        
+        if self.currentImageIndex + 1 < len(self.imgList):
+            self.currentImageIndex = self.currentImageIndex + 1
+            self.currentImage = self.imgList[self.currentImageIndex]
+            self.load_new_image()
+        else:
+            print(Fore.RED + 'No more images in directory! Currently at image %d of %d' % (
+                    self.currentImageIndex + 1, len(self.imgList)))
+            print(Style.RESET_ALL)
+
+    def __handle_previous_btn(self, event):
+
+        if self.currentImageIndex > 0:
+            self.currentImageIndex = self.currentImageIndex - 1
+            self.currentImage = self.imgList[self.currentImageIndex]
+            self.load_new_image()
+        else:
+            print(Fore.RED + 'No previous image! Currently at image %d of %d' % (
+                    self.currentImageIndex + 1, len(self.imgList)))
+            print(Style.RESET_ALL)
+
+
+    def __handle_crop_btn(self, event):
+        self.cropping = not self.cropping
+        if self.cropping == True:
+            self.textEditMode.setText("Cropping")
+        else:
+            self.textEditMode.setText("Label")
+
+    def __create_dir_if_not_exists(self, dir):
+        if not os.path.exists(dir):
+            os.makedirs(dir)
+
+    # Save the output
+    def __handle_done_btn(self, event):
+
+        image_path = os.path.join(self.outputFolder, IMAGES_OUT_DIR)
+        int_mask_path = os.path.join(self.outputFolder, INT_MASKS_OUT_DIR)
+        rgb_mask_path = os.path.join(self.outputFolder, RGB_MASKS_OUT_DIR)
+        full_mask_path = os.path.join(self.outputFolder, FULL_MASKS_OUT_DIR)
+
+        self.__create_dir_if_not_exists(image_path)
+        self.__create_dir_if_not_exists(int_mask_path)
+        self.__create_dir_if_not_exists(rgb_mask_path)
+        self.__create_dir_if_not_exists(full_mask_path)
+
+        # Convert back to BGR so that OpenCV can write out properly
+        if self.has_original_been_created == True:        
+            output_image = cv2.cvtColor(self.original, cv2.COLOR_RGB2BGR).copy()
+        else:
+            output_image = cv2.cvtColor(self.cv_img, cv2.COLOR_RGB2BGR).copy()
