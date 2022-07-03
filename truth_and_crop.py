@@ -268,3 +268,91 @@ class TruthAndCropApp(QtGui.QMainWindow, Ui_MainWindow):
                     y - self.w:y + self.w, x - self.w:x + self.w]
 
                 cv2.imwrite(os.path.join(
+                    image_path, details + IMAGE_EXT), cropped_image)
+                cv2.imwrite(os.path.join(
+                    int_mask_path, details + IMAGE_EXT), cropped_int_mask)
+                cv2.imwrite(os.path.join(
+                    rgb_mask_path, details + IMAGE_EXT), cropped_rgb_mask)
+
+                print('Success: cropped image at x=%d,y=%d with wnd=%d' %
+                      (x, y, self.w))
+
+            else:
+                print(Fore.RED + 'Error: exceeded image dimensions, could not crop at x=%d,y=%d with wnd=%d' % (
+                    x, y, self.w))
+                print(Style.RESET_ALL)
+
+        #for i in range(crop_list_len):
+        #    crop_list.pop()
+        if self.debug == True:
+            print(self.crop_list)
+            print(self.drawing_list)
+
+        self.count += crop_list_len
+        self.__reset_state()
+
+    # Save the output
+    def __handle_toggle_btn(self, event):
+
+        if self.debug == True:
+            print('Toggle')
+
+        height, width, __ = self.cv_img.shape
+
+        if self.has_original_been_created == False:
+            if self.debug == True:
+                print('Creating copy of image')
+            '''this is an expensive operation, 
+            so we do it here only once we begin labeling'''
+            self.original = self.cv_img.copy()
+            self.has_original_been_created = True
+
+        self.showSuperPx = not self.showSuperPx
+
+        # Show the in-progress image
+        if self.showSuperPx == True:
+            if self.superPxGenerated == False:
+                self.run_slic() # Only compute superpixels once per image
+                self.superPxGenerated = True
+            self.update_canvas(self.cv_img, height, width)
+        # Show the original
+        else:
+            self.update_canvas(self.original, height, width)
+
+
+    def __handle_click(self, event):
+
+        x = event.pos().x()
+        y = event.pos().y()
+
+        if self.debug == True:
+            print('Pixel position = (' + str(x) +
+                  ' , ' + str(y) + ')')
+
+        if self.cropping == False:
+            self.drawing_list.append((x, y, self.class_label))
+            self.color_superpixel_by_class(x, y)
+
+        else:
+            if self.debug == True:
+                print('Cropping')
+            cv2.rectangle(self.cv_img, (x - self.w, y - self.w),
+                          (x + self.w, y + self.w), (0, 255, 0), 3)
+            self.crop_list.append((x, y))
+
+        # Update the canvas if ground-truthing or cropping
+        height, width, __ = self.cv_img.shape
+        self.update_canvas(self.cv_img, height, width)
+
+    def __update_label_balance(self, operation_type, label):
+
+        if operation_type == OP_ADD:
+            self.class_qty[label] += 1
+        elif operation_type == OP_REMOVE:
+            self.class_qty[label] -= 1
+        else:
+            pass
+
+    def __refresh_lcds(self):
+
+        n_labeled = np.sum(self.class_qty)
