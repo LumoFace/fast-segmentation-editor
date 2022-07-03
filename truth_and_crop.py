@@ -211,3 +211,60 @@ class TruthAndCropApp(QtGui.QMainWindow, Ui_MainWindow):
             output_image = cv2.cvtColor(self.original, cv2.COLOR_RGB2BGR).copy()
         else:
             output_image = cv2.cvtColor(self.cv_img, cv2.COLOR_RGB2BGR).copy()
+
+        # Separate currentImage into dir and filename, can discard dir
+        __, img_name = os.path.split(self.currentImage)
+
+        for px, py, p_class in self.drawing_list:
+
+            # Find superpixel that coord belongs to.
+            super_px = self.segments[py, px]
+
+            # Set all pixels in super_px to p_class.
+            self.segmentation_mask[self.segments == super_px] = p_class
+
+        # Make PASCAL fmt segmentation_mask as well
+
+        height, width, __ = output_image.shape
+
+        # Initialize empty RGB array
+        # array = np.empty((height, width, self.cmap.shape[
+        #                 1]), dtype=self.cmap.dtype)
+        array = np.zeros((height, width, self.cmap.shape[
+                         1]), dtype=self.cmap.dtype)
+
+        array = cv2.cvtColor(array, cv2.COLOR_RGB2BGR)
+
+        # Convert integers in segmentation_mask to rgb vals
+        for i in range(NCLASSES - 1):
+            array[self.segmentation_mask == i] = self.cmap[i]
+
+        # If there were any void labels, map those separately
+        if self.class_qty[CLASS_VOID] > 0:
+            array[self.segmentation_mask == CLASS_VOID] = self.cmap[255]
+
+        # Save the original mask before cropping
+        cv2.imwrite(os.path.join(full_mask_path,
+                                 img_name[:-4] + '_mask' + IMAGE_EXT), array)
+
+        crop_list_len = len(self.crop_list)
+        for i, (x, y) in enumerate(self.crop_list):
+
+            # Detailed cropped image suffix.
+            details = self.__generate_image_details(
+                img_name, i + self.count, x, y)
+
+            y_lwr = y - self.w > 0
+            y_upr = y + self.w < height
+            x_lwr = x - self.w > 0
+            x_upr = x + self.w < width
+            if y_lwr and y_upr and x_lwr and x_upr:
+
+                cropped_image = output_image[
+                    y - self.w:y + self.w, x - self.w:x + self.w, :]
+                cropped_int_mask = self.segmentation_mask[
+                    y - self.w:y + self.w, x - self.w:x + self.w]
+                cropped_rgb_mask = array[
+                    y - self.w:y + self.w, x - self.w:x + self.w]
+
+                cv2.imwrite(os.path.join(
