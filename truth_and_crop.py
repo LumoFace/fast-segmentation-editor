@@ -356,3 +356,81 @@ class TruthAndCropApp(QtGui.QMainWindow, Ui_MainWindow):
     def __refresh_lcds(self):
 
         n_labeled = np.sum(self.class_qty)
+
+        if n_labeled > 0:
+            for i in range(len(self.lcd_values)):
+                self.lcd_values[i] = int(
+                    100 * float(self.class_qty[i]) / n_labeled)
+        else:
+            self.lcd_values[:] = 0
+
+        self.lcdNumber_0.display(self.lcd_values[0])
+        self.lcdNumber_1.display(self.lcd_values[1])
+        self.lcdNumber_2.display(self.lcd_values[2])
+        self.lcdNumber_3.display(self.lcd_values[3])
+        self.lcdNumber_4.display(self.lcd_values[4])
+
+    def read_filelist(self):
+        img_path, img_name = os.path.split(self.currentImage)
+        imgList = [os.path.join(dirpath, f)
+                   for dirpath, dirnames, files in os.walk(img_path)
+                   for f in files if f.endswith(VALID_EXT)]
+        self.imgList = natsorted(imgList)
+
+        print(img_path)
+        print(img_name)
+        print(imgList[0])
+        print(self.currentImage)
+
+        self.currentImageIndex = self.imgList.index(self.currentImage)
+        print("No of files: %i" % len(self.imgList))
+
+    def load_new_image(self):
+        self.imageField.setText(self.currentImage)
+        self.load_opencv_to_canvas()
+        self.__init_lcds()
+        self.__refresh_lcds()
+        self.__reset_state()
+        self.count = 0
+
+    def __generate_image_details(self, img_name, count, x, y):
+
+        details = img_name[:-4] \
+            + '_nseg' + str(self.nseg) \
+            + '_sig' + str(self.sigma) \
+            + '_ds' + str(self.ds) \
+            + '_' + str(count) \
+            + "_x" + str(x) \
+            + "_y" + str(y)
+
+        return details
+
+    def color_superpixel_by_class(self, x, y):
+        """Color superpixel according to class_label
+
+        Keyword arguments:
+        x,y -- pixel coordinates from MouseCallback
+        class_label -- determines channel (B,G,R) whose intensity to set
+        """
+        # Are we trying to assign a new label to this superpixel?
+        if (self.segments[y, x], self.class_label) not in self.labeled_superpixel_list:
+
+            # If yes, remove previous superpixel-label entry
+            for t in self.labeled_superpixel_list:
+                if t[T_INDEX_SEGMENT] == self.segments[y, x]:
+                    self.labeled_superpixel_list.remove(t)
+                    self.__update_label_balance(OP_REMOVE, t[T_INDEX_LABEL])
+
+            '''
+            self.cv_img[:, :, N_CHANNELS - self.class_label][self.segments ==
+                                                             self.segments[y, x]] = PX_INTENSITY * 255
+            '''
+            self.cv_img[self.segments == self.segments[
+                y, x]] = self.cmap[self.class_label]
+
+            # Add superpixel to list
+            self.labeled_superpixel_list.append(
+                (self.segments[y, x], self.class_label))
+
+            # Update progress bar
+            # The percentage is calculated by dividing the progress (value() -
