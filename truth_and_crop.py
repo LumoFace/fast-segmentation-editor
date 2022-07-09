@@ -434,3 +434,55 @@ class TruthAndCropApp(QtGui.QMainWindow, Ui_MainWindow):
 
             # Update progress bar
             # The percentage is calculated by dividing the progress (value() -
+            # minimum()) divided by maximum() - minimum().
+            self.progressBarFloatValue += float(
+                self.progressBar.maximum() / self.nseg)
+            self.progressBar.setValue(self.progressBarFloatValue)
+
+            self.__update_label_balance(OP_ADD, self.class_label)
+            self.__refresh_lcds()
+
+            if self.debug == True:
+                print(self.labeled_superpixel_list)
+
+    def btn_state(self, b):
+
+        if b.text() == "Other":
+            self.class_label = CLASS_OTHER
+
+        if b.text() == "Mussel":
+            self.class_label = CLASS_MUSSEL
+
+        if b.text() == "Ciona":
+            self.class_label = CLASS_CIONA
+
+        if b.text() == "Styela":
+            self.class_label = CLASS_STYELA
+
+        if b.text() == "Void":
+            self.class_label = CLASS_VOID
+
+        if self.debug == True:
+            if b.isChecked() == True:
+                print(b.text() + " is selected")
+            else:
+                print(b.text() + " is deselected")
+
+    def update_canvas(self, img, height, width):
+        if self.debug == True:
+            print("update_canvas: height=%d,width=%d" % (height, width))
+        bytesPerLine = 3 * width
+        qImg = QImage(img, width, height,
+                      bytesPerLine, QImage.Format_RGB888)
+        pixmap = QPixmap(qImg)
+        self.img_view.setPixmap(pixmap)
+        self.img_view.show()
+
+    def get_input_file(self):
+        self.currentImage = QFileDialog.getOpenFileName(self, 'Open file',
+                                                        'c:\\', "Image files (*.jpg *.png)")
+        self.load_new_image()
+        self.read_filelist()
+
+    def get_output_folder(self):
+        self.outputFolder = str(QFileDialog.getExistingDirectory(
