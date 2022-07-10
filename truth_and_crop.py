@@ -486,3 +486,41 @@ class TruthAndCropApp(QtGui.QMainWindow, Ui_MainWindow):
 
     def get_output_folder(self):
         self.outputFolder = str(QFileDialog.getExistingDirectory(
+            self, "Select root output directory"))
+        self.outputPath.setText(self.outputFolder)
+        # print(self.outputFolder)
+
+    def load_opencv_to_canvas(self):
+        
+        if self.debug == True:
+            print("self.ds = %d" % self.ds)
+        self.cv_img = cv2.imread(self.currentImage)[::self.ds, ::self.ds, :]
+        self.cv_img = cv2.cvtColor(
+            self.cv_img, cv2.COLOR_BGR2RGB).astype(np.uint8)
+        height, width, __ = self.cv_img.shape
+        self.has_original_been_created = False
+        self.segmentation_mask = np.zeros((height, width))
+        self.update_canvas(self.cv_img, height, width)
+
+    def run_slic(self):
+
+        #self.original = self.cv_img.copy()
+        #self.segmentation_mask = np.zeros(self.cv_img[:, :, 0].shape)
+
+        self.segments = slic(self.cv_img, n_segments=self.nseg, sigma=self.sigma,
+                             enforce_connectivity=self.enforce, compactness=self.compactness)
+        self.cv_img = 255. * \
+            mark_boundaries(self.cv_img, self.segments, color=(0, 0, 0))
+        self.cv_img = self.cv_img.astype(np.uint8)
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--debug', help="run in debug mode",
+                        action="store_true")
+    args = parser.parse_args()
+
+    app = QtGui.QApplication(sys.argv)
+    window = TruthAndCropApp(args.debug)
+    window.show()
+    sys.exit(app.exec_())
