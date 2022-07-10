@@ -109,3 +109,69 @@ public:
         img_view = new QLabel(scrollAreaWidgetContents_2);
         img_view->setObjectName(QStringLiteral("img_view"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(img_view->sizePolicy().hasHeightForWidth());
+        img_view->setSizePolicy(sizePolicy);
+        img_view->setScaledContents(true);
+        img_view->setWordWrap(true);
+
+        horizontalLayout->addWidget(img_view);
+
+        scrollArea->setWidget(scrollAreaWidgetContents_2);
+        horizontalLayoutWidget = new QWidget(centralwidget);
+        horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
+        horizontalLayoutWidget->setGeometry(QRect(900, 380, 71, 141));
+        verticalLayout_4 = new QVBoxLayout(horizontalLayoutWidget);
+        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        verticalLayout_4->setContentsMargins(0, 0, 0, 0);
+        compactnessBox = new QSpinBox(horizontalLayoutWidget);
+        compactnessBox->setObjectName(QStringLiteral("compactnessBox"));
+        compactnessBox->setMinimum(1);
+        compactnessBox->setMaximum(999);
+        compactnessBox->setValue(20);
+
+        verticalLayout_4->addWidget(compactnessBox);
+
+        wndBox = new QSpinBox(horizontalLayoutWidget);
+        wndBox->setObjectName(QStringLiteral("wndBox"));
+        wndBox->setMinimum(2);
+        wndBox->setMaximum(999);
+        wndBox->setValue(112);
+
+        verticalLayout_4->addWidget(wndBox);
+
+        segmentsBox = new QSpinBox(horizontalLayoutWidget);
+        segmentsBox->setObjectName(QStringLiteral("segmentsBox"));
+        segmentsBox->setMaximum(9999);
+        segmentsBox->setValue(200);
+
+        verticalLayout_4->addWidget(segmentsBox);
+
+        sigmaBox = new QSpinBox(horizontalLayoutWidget);
+        sigmaBox->setObjectName(QStringLiteral("sigmaBox"));
+        sigmaBox->setValue(3);
+
+        verticalLayout_4->addWidget(sigmaBox);
+
+        dsBox = new QSpinBox(horizontalLayoutWidget);
+        dsBox->setObjectName(QStringLiteral("dsBox"));
+        dsBox->setValue(3);
+
+        verticalLayout_4->addWidget(dsBox);
+
+        horizontalLayoutWidget_2 = new QWidget(centralwidget);
+        horizontalLayoutWidget_2->setObjectName(QStringLiteral("horizontalLayoutWidget_2"));
+        horizontalLayoutWidget_2->setGeometry(QRect(980, 380, 211, 141));
+        verticalLayout_5 = new QVBoxLayout(horizontalLayoutWidget_2);
+        verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
+        verticalLayout_5->setContentsMargins(0, 0, 0, 0);
+        label_3 = new QLabel(horizontalLayoutWidget_2);
+        label_3->setObjectName(QStringLiteral("label_3"));
+
+        verticalLayout_5->addWidget(label_3);
+
+        label_8 = new QLabel(horizontalLayoutWidget_2);
+        label_8->setObjectName(QStringLiteral("label_8"));
+
+        verticalLayout_5->addWidget(label_8);
