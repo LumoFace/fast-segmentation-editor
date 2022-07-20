@@ -175,3 +175,66 @@ public:
         label_8->setObjectName(QStringLiteral("label_8"));
 
         verticalLayout_5->addWidget(label_8);
+
+        label_2 = new QLabel(horizontalLayoutWidget_2);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        verticalLayout_5->addWidget(label_2);
+
+        label = new QLabel(horizontalLayoutWidget_2);
+        label->setObjectName(QStringLiteral("label"));
+
+        verticalLayout_5->addWidget(label);
+
+        label_7 = new QLabel(horizontalLayoutWidget_2);
+        label_7->setObjectName(QStringLiteral("label_7"));
+
+        verticalLayout_5->addWidget(label_7);
+
+        horizontalLayoutWidget_3 = new QWidget(centralwidget);
+        horizontalLayoutWidget_3->setObjectName(QStringLiteral("horizontalLayoutWidget_3"));
+        horizontalLayoutWidget_3->setGeometry(QRect(900, 570, 291, 191));
+        horizontalLayout_4 = new QHBoxLayout(horizontalLayoutWidget_3);
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+        horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        class_other = new QRadioButton(horizontalLayoutWidget_3);
+        class_other->setObjectName(QStringLiteral("class_other"));
+
+        verticalLayout->addWidget(class_other);
+
+        class_mussel = new QRadioButton(horizontalLayoutWidget_3);
+        class_mussel->setObjectName(QStringLiteral("class_mussel"));
+
+        verticalLayout->addWidget(class_mussel);
+
+        class_ciona = new QRadioButton(horizontalLayoutWidget_3);
+        class_ciona->setObjectName(QStringLiteral("class_ciona"));
+
+        verticalLayout->addWidget(class_ciona);
+
+        class_styela = new QRadioButton(horizontalLayoutWidget_3);
+        class_styela->setObjectName(QStringLiteral("class_styela"));
+
+        verticalLayout->addWidget(class_styela);
+
+
+        horizontalLayout_4->addLayout(verticalLayout);
+
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        refreshBtn = new QPushButton(horizontalLayoutWidget_3);
+        refreshBtn->setObjectName(QStringLiteral("refreshBtn"));
+
+        verticalLayout_2->addWidget(refreshBtn);
+
+        cropBtn = new QPushButton(horizontalLayoutWidget_3);
+        cropBtn->setObjectName(QStringLiteral("cropBtn"));
+
+        verticalLayout_2->addWidget(cropBtn);
+
+        toggleBtn = new QPushButton(horizontalLayoutWidget_3);
+        toggleBtn->setObjectName(QStringLiteral("toggleBtn"));
+
+        verticalLayout_2->addWidget(toggleBtn);
