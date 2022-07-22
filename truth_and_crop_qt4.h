@@ -238,3 +238,66 @@ public:
         toggleBtn->setObjectName(QStringLiteral("toggleBtn"));
 
         verticalLayout_2->addWidget(toggleBtn);
+
+        doneBtn = new QPushButton(horizontalLayoutWidget_3);
+        doneBtn->setObjectName(QStringLiteral("doneBtn"));
+
+        verticalLayout_2->addWidget(doneBtn);
+
+        enforceConnectivityBox = new QCheckBox(horizontalLayoutWidget_3);
+        enforceConnectivityBox->setObjectName(QStringLiteral("enforceConnectivityBox"));
+
+        verticalLayout_2->addWidget(enforceConnectivityBox);
+
+
+        horizontalLayout_4->addLayout(verticalLayout_2);
+
+        verticalLayoutWidget_3 = new QWidget(centralwidget);
+        verticalLayoutWidget_3->setObjectName(QStringLiteral("verticalLayoutWidget_3"));
+        verticalLayoutWidget_3->setGeometry(QRect(900, 90, 291, 188));
+        verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget_3);
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        label_6 = new QLabel(verticalLayoutWidget_3);
+        label_6->setObjectName(QStringLiteral("label_6"));
+
+        verticalLayout_3->addWidget(label_6);
+
+        imageField = new QTextEdit(verticalLayoutWidget_3);
+        imageField->setObjectName(QStringLiteral("imageField"));
+
+        verticalLayout_3->addWidget(imageField);
+
+        label_4 = new QLabel(verticalLayoutWidget_3);
+        label_4->setObjectName(QStringLiteral("label_4"));
+
+        verticalLayout_3->addWidget(label_4);
+
+        outputPath = new QTextEdit(verticalLayoutWidget_3);
+        outputPath->setObjectName(QStringLiteral("outputPath"));
+
+        verticalLayout_3->addWidget(outputPath);
+
+        progressBar = new QProgressBar(centralwidget);
+        progressBar->setObjectName(QStringLiteral("progressBar"));
+        progressBar->setGeometry(QRect(910, 770, 291, 31));
+        progressBar->setValue(24);
+        horizontalLayoutWidget_4 = new QWidget(centralwidget);
+        horizontalLayoutWidget_4->setObjectName(QStringLiteral("horizontalLayoutWidget_4"));
+        horizontalLayoutWidget_4->setGeometry(QRect(900, 30, 291, 51));
+        horizontalLayout_5 = new QHBoxLayout(horizontalLayoutWidget_4);
+        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
+        horizontalLayout_5->setContentsMargins(0, 0, 0, 0);
+        inFile = new QPushButton(horizontalLayoutWidget_4);
+        inFile->setObjectName(QStringLiteral("inFile"));
+
+        horizontalLayout_5->addWidget(inFile);
+
+        outFile = new QPushButton(horizontalLayoutWidget_4);
+        outFile->setObjectName(QStringLiteral("outFile"));
+
+        horizontalLayout_5->addWidget(outFile);
+
+        horizontalLayoutWidget_5 = new QWidget(centralwidget);
+        horizontalLayoutWidget_5->setObjectName(QStringLiteral("horizontalLayoutWidget_5"));
+        horizontalLayoutWidget_5->setGeometry(QRect(900, 290, 291, 51));
