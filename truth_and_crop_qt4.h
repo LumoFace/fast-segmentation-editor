@@ -301,3 +301,56 @@ public:
         horizontalLayoutWidget_5 = new QWidget(centralwidget);
         horizontalLayoutWidget_5->setObjectName(QStringLiteral("horizontalLayoutWidget_5"));
         horizontalLayoutWidget_5->setGeometry(QRect(900, 290, 291, 51));
+        horizontalLayout_6 = new QHBoxLayout(horizontalLayoutWidget_5);
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        horizontalLayout_6->setContentsMargins(0, 0, 0, 0);
+        previousBtn = new QPushButton(horizontalLayoutWidget_5);
+        previousBtn->setObjectName(QStringLiteral("previousBtn"));
+
+        horizontalLayout_6->addWidget(previousBtn);
+
+        outFile_2 = new QPushButton(horizontalLayoutWidget_5);
+        outFile_2->setObjectName(QStringLiteral("outFile_2"));
+
+        horizontalLayout_6->addWidget(outFile_2);
+
+        label_5 = new QLabel(centralwidget);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setGeometry(QRect(900, 550, 140, 16));
+        QFont font;
+        font.setFamily(QStringLiteral("Ubuntu Mono"));
+        font.setPointSize(12);
+        font.setBold(true);
+        font.setUnderline(false);
+        font.setWeight(75);
+        label_5->setFont(font);
+        label_5->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        groupBox = new QGroupBox(centralwidget);
+        groupBox->setObjectName(QStringLiteral("groupBox"));
+        groupBox->setGeometry(QRect(890, 350, 311, 181));
+        groupBox_2 = new QGroupBox(centralwidget);
+        groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
+        groupBox_2->setGeometry(QRect(890, 0, 311, 351));
+        groupBox_3 = new QGroupBox(centralwidget);
+        groupBox_3->setObjectName(QStringLiteral("groupBox_3"));
+        groupBox_3->setGeometry(QRect(890, 540, 311, 271));
+        TruthAndCrop->setCentralWidget(centralwidget);
+        groupBox_3->raise();
+        groupBox_2->raise();
+        groupBox->raise();
+        scrollArea->raise();
+        horizontalLayoutWidget->raise();
+        horizontalLayoutWidget_2->raise();
+        horizontalLayoutWidget_3->raise();
+        verticalLayoutWidget_3->raise();
+        progressBar->raise();
+        horizontalLayoutWidget_4->raise();
+        horizontalLayoutWidget_5->raise();
+        label_5->raise();
+        menubar = new QMenuBar(TruthAndCrop);
+        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setGeometry(QRect(0, 0, 1209, 19));
+        TruthAndCrop->setMenuBar(menubar);
+        statusbar = new QStatusBar(TruthAndCrop);
+        statusbar->setObjectName(QStringLiteral("statusbar"));
+        TruthAndCrop->setStatusBar(statusbar);
