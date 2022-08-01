@@ -354,3 +354,59 @@ public:
         statusbar = new QStatusBar(TruthAndCrop);
         statusbar->setObjectName(QStringLiteral("statusbar"));
         TruthAndCrop->setStatusBar(statusbar);
+
+        retranslateUi(TruthAndCrop);
+
+        QMetaObject::connectSlotsByName(TruthAndCrop);
+    } // setupUi
+
+    void retranslateUi(QMainWindow *TruthAndCrop)
+    {
+        TruthAndCrop->setWindowTitle(QApplication::translate("TruthAndCrop", "MainWindow", 0));
+        img_view->setText(QString());
+        label_3->setText(QApplication::translate("TruthAndCrop", "Superpixel compactness", 0));
+        label_8->setText(QApplication::translate("TruthAndCrop", "Crop window size / 2", 0));
+        label_2->setText(QApplication::translate("TruthAndCrop", "Number of SLIC segments", 0));
+        label->setText(QApplication::translate("TruthAndCrop", "Gaussian sigma smoothing", 0));
+        label_7->setText(QApplication::translate("TruthAndCrop", "Down-sampling factor", 0));
+        class_other->setText(QApplication::translate("TruthAndCrop", "Other", 0));
+        class_mussel->setText(QApplication::translate("TruthAndCrop", "Blue Mussel", 0));
+        class_ciona->setText(QApplication::translate("TruthAndCrop", "Ciona", 0));
+        class_styela->setText(QApplication::translate("TruthAndCrop", "S. Clava", 0));
+        refreshBtn->setText(QApplication::translate("TruthAndCrop", "Refresh", 0));
+        cropBtn->setText(QApplication::translate("TruthAndCrop", "Crop", 0));
+        toggleBtn->setText(QApplication::translate("TruthAndCrop", "Toggle", 0));
+        doneBtn->setText(QApplication::translate("TruthAndCrop", "Save", 0));
+        enforceConnectivityBox->setText(QApplication::translate("TruthAndCrop", "Enforce Connect.", 0));
+        label_6->setText(QApplication::translate("TruthAndCrop", " Image", 0));
+        imageField->setHtml(QApplication::translate("TruthAndCrop", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:11pt;\"><br /></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:11pt;\"><br /></p></body></html>", 0));
+        label_4->setText(QApplication::translate("TruthAndCrop", " Output Path", 0));
+        outputPath->setHtml(QApplication::translate("TruthAndCrop", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:11pt;\"><br /></p></body></html>", 0));
+        inFile->setText(QApplication::translate("TruthAndCrop", "Input File", 0));
+        outFile->setText(QApplication::translate("TruthAndCrop", "Output Path", 0));
+        previousBtn->setText(QApplication::translate("TruthAndCrop", "Previous Image", 0));
+        outFile_2->setText(QApplication::translate("TruthAndCrop", "Next Image", 0));
+        label_5->setText(QApplication::translate("TruthAndCrop", "Choose class", 0));
+        groupBox->setTitle(QString());
+        groupBox_2->setTitle(QString());
+        groupBox_3->setTitle(QString());
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class TruthAndCrop: public Ui_TruthAndCrop {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // GUI_TESTL19945_H
