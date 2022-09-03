@@ -10,4 +10,6 @@
 #define TRUTH_AND_CROP_QT4SA2743_H
 
 #include <QtCore/QVariant>
-#inclu
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWi
