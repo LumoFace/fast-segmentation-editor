@@ -17,3 +17,6 @@
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLCDNumber>
+#include <QtWidgets/QLabel>
+#i
