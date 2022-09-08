@@ -19,4 +19,6 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
-#i
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenuBar>
+#in
