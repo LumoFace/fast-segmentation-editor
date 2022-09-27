@@ -26,4 +26,6 @@
 #include <QtWidgets/QRadioButton>
 #include <QtWidgets/QScrollArea>
 #include <QtWidgets/QSpinBox>
-#
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
+#includ
