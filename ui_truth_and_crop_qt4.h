@@ -31,4 +31,10 @@
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
-QT_BEGIN_NAMESPA
+QT_BEGIN_NAMESPACE
+
+class Ui_TruthAndCrop
+{
+public:
+    QWidget *centralwidget;
+    QScr
