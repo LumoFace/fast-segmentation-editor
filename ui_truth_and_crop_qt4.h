@@ -37,4 +37,6 @@ class Ui_TruthAndCrop
 {
 public:
     QWidget *centralwidget;
-    QScr
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents_2;
+    
