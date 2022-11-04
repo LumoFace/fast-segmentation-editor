@@ -41,4 +41,6 @@ public:
     QWidget *scrollAreaWidgetContents_2;
     QHBoxLayout *horizontalLayout;
     QLabel *img_view;
-    QWidget *horizo
+    QWidget *horizontalLayoutWidget;
+    QVBoxLayout *verticalLayout_4;
+    QSpinBox *compactnes
