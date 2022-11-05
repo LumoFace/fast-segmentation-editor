@@ -43,4 +43,7 @@ public:
     QLabel *img_view;
     QWidget *horizontalLayoutWidget;
     QVBoxLayout *verticalLayout_4;
-    QSpinBox *compactnes
+    QSpinBox *compactnessBox;
+    QSpinBox *wndBox;
+    QSpinBox *segmentsBox;
+    QSpinBox *sigma
