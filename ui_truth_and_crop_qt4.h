@@ -46,4 +46,6 @@ public:
     QSpinBox *compactnessBox;
     QSpinBox *wndBox;
     QSpinBox *segmentsBox;
-    QSpinBox *sigma
+    QSpinBox *sigmaBox;
+    QSpinBox *dsBox;
+    QWidget *horizontalLayoutWidget_
