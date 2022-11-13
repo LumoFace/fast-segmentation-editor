@@ -51,4 +51,8 @@ public:
     QWidget *horizontalLayoutWidget_2;
     QVBoxLayout *verticalLayout_5;
     QLabel *label_3;
-    QL
+    QLabel *label_8;
+    QLabel *label_2;
+    QLabel *label;
+    QLabel *label_7;
+ 
