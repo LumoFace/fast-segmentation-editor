@@ -48,4 +48,7 @@ public:
     QSpinBox *segmentsBox;
     QSpinBox *sigmaBox;
     QSpinBox *dsBox;
-    QWidget *horizontalLayoutWidget_
+    QWidget *horizontalLayoutWidget_2;
+    QVBoxLayout *verticalLayout_5;
+    QLabel *label_3;
+    QL
