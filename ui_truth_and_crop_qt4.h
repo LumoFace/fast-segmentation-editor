@@ -55,4 +55,5 @@ public:
     QLabel *label_2;
     QLabel *label;
     QLabel *label_7;
- 
+    QWidget *horizontalLayoutWidget_3;
+    QHBoxLayout *horiz
