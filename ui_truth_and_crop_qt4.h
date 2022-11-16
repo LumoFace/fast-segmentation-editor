@@ -58,4 +58,6 @@ public:
     QWidget *horizontalLayoutWidget_3;
     QHBoxLayout *horizontalLayout_4;
     QVBoxLayout *verticalLayout;
-    QR
+    QRadioButton *class_other;
+    QRadioButton *class_mussel;
+    QRadio
