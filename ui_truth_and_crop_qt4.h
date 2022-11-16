@@ -60,4 +60,6 @@ public:
     QVBoxLayout *verticalLayout;
     QRadioButton *class_other;
     QRadioButton *class_mussel;
-    QRadio
+    QRadioButton *class_ciona;
+    QRadioButton *class_styela;
+    QRadioButton 
