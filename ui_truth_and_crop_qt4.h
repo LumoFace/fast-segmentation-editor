@@ -62,4 +62,6 @@ public:
     QRadioButton *class_mussel;
     QRadioButton *class_ciona;
     QRadioButton *class_styela;
-    QRadioButton 
+    QRadioButton *class_void;
+    QVBoxLayout *verticalLayout_6;
+    QLCDNumber *lcd
