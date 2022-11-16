@@ -64,4 +64,7 @@ public:
     QRadioButton *class_styela;
     QRadioButton *class_void;
     QVBoxLayout *verticalLayout_6;
-    QLCDNumber *lcd
+    QLCDNumber *lcdNumber_0;
+    QLCDNumber *lcdNumber_1;
+    QLCDNumber *lcdNumber_2;
+  
