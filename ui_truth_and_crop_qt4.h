@@ -67,4 +67,6 @@ public:
     QLCDNumber *lcdNumber_0;
     QLCDNumber *lcdNumber_1;
     QLCDNumber *lcdNumber_2;
-  
+    QLCDNumber *lcdNumber_3;
+    QLCDNumber *lcdNumber_4;
+    QVBoxLayout *vert
