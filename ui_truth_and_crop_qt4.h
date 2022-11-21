@@ -72,4 +72,6 @@ public:
     QVBoxLayout *verticalLayout_2;
     QPushButton *refreshBtn;
     QPushButton *cropBtn;
-    QPushBut
+    QPushButton *toggleBtn;
+    QPushButton *doneBtn;
+    QCheckBox *enforceConnec
