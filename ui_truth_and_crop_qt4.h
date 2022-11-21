@@ -69,4 +69,7 @@ public:
     QLCDNumber *lcdNumber_2;
     QLCDNumber *lcdNumber_3;
     QLCDNumber *lcdNumber_4;
-    QVBoxLayout *vert
+    QVBoxLayout *verticalLayout_2;
+    QPushButton *refreshBtn;
+    QPushButton *cropBtn;
+    QPushBut
