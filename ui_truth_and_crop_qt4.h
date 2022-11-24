@@ -74,4 +74,6 @@ public:
     QPushButton *cropBtn;
     QPushButton *toggleBtn;
     QPushButton *doneBtn;
-    QCheckBox *enforceConnec
+    QCheckBox *enforceConnectivityBox;
+    QWidget *verticalLayoutWidget_3;
+    QVBoxLayout *verti
