@@ -83,4 +83,6 @@ public:
     QTextEdit *outputPath;
     QProgressBar *progressBar;
     QWidget *horizontalLayoutWidget_4;
-    QHBoxLa
+    QHBoxLayout *horizontalLayout_5;
+    QPushButton *inFile;
+    QPushButton *outFile;
