@@ -81,4 +81,6 @@ public:
     QTextEdit *imageField;
     QLabel *label_4;
     QTextEdit *outputPath;
-    QProgressBar *p
+    QProgressBar *progressBar;
+    QWidget *horizontalLayoutWidget_4;
+    QHBoxLa
