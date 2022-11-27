@@ -79,4 +79,6 @@ public:
     QVBoxLayout *verticalLayout_3;
     QLabel *label_6;
     QTextEdit *imageField;
-    
+    QLabel *label_4;
+    QTextEdit *outputPath;
+    QProgressBar *p
