@@ -76,4 +76,7 @@ public:
     QPushButton *doneBtn;
     QCheckBox *enforceConnectivityBox;
     QWidget *verticalLayoutWidget_3;
-    QVBoxLayout *verti
+    QVBoxLayout *verticalLayout_3;
+    QLabel *label_6;
+    QTextEdit *imageField;
+    
