@@ -86,3 +86,5 @@ public:
     QHBoxLayout *horizontalLayout_5;
     QPushButton *inFile;
     QPushButton *outFile;
+    QWidget *horizontalLayoutWidget_5;
+    QHBoxLayout *horizontalLayout_
