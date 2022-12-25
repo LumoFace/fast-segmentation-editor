@@ -87,4 +87,7 @@ public:
     QPushButton *inFile;
     QPushButton *outFile;
     QWidget *horizontalLayoutWidget_5;
-    QHBoxLayout *horizontalLayout_
+    QHBoxLayout *horizontalLayout_6;
+    QPushButton *previousBtn;
+    QPushButton *nextBtn;
+    QLabel *lab
