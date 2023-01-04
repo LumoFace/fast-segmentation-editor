@@ -90,4 +90,7 @@ public:
     QHBoxLayout *horizontalLayout_6;
     QPushButton *previousBtn;
     QPushButton *nextBtn;
-    QLabel *lab
+    QLabel *label_5;
+    QGroupBox *groupBox;
+    QGroupBox *groupBox_2;
+    QGroupBox *gro
