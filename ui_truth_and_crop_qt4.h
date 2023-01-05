@@ -93,4 +93,7 @@ public:
     QLabel *label_5;
     QGroupBox *groupBox;
     QGroupBox *groupBox_2;
-    QGroupBox *gro
+    QGroupBox *groupBox_3;
+    QTextEdit *textEdit;
+    QLabel *label_9;
+    QMen
