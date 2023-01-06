@@ -99,4 +99,6 @@ public:
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
-    void setupUi(QMainWind
+    void setupUi(QMainWindow *TruthAndCrop)
+    {
+        if (TruthAndCrop->objectName().isEm
