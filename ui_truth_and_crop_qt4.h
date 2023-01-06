@@ -96,4 +96,7 @@ public:
     QGroupBox *groupBox_3;
     QTextEdit *textEdit;
     QLabel *label_9;
-    QMen
+    QMenuBar *menubar;
+    QStatusBar *statusbar;
+
+    void setupUi(QMainWind
