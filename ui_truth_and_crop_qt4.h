@@ -101,4 +101,5 @@ public:
 
     void setupUi(QMainWindow *TruthAndCrop)
     {
-        if (TruthAndCrop->objectName().isEm
+        if (TruthAndCrop->objectName().isEmpty())
+            TruthAndCrop->setObjectName(QStringLiteral
