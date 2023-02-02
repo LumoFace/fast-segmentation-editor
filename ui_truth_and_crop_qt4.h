@@ -102,4 +102,6 @@ public:
     void setupUi(QMainWindow *TruthAndCrop)
     {
         if (TruthAndCrop->objectName().isEmpty())
-            TruthAndCrop->setObjectName(QStringLiteral
+            TruthAndCrop->setObjectName(QStringLiteral("TruthAndCrop"));
+        TruthAndCrop->resize(1212, 923);
+  
