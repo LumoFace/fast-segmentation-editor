@@ -104,4 +104,5 @@ public:
         if (TruthAndCrop->objectName().isEmpty())
             TruthAndCrop->setObjectName(QStringLiteral("TruthAndCrop"));
         TruthAndCrop->resize(1212, 923);
-  
+        centralwidget = new QWidget(TruthAndCrop);
+        centralwidget->s
