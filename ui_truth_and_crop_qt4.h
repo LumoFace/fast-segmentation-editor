@@ -106,4 +106,5 @@ public:
         TruthAndCrop->resize(1212, 923);
         centralwidget = new QWidget(TruthAndCrop);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
-        scroll
+        scrollArea = new QScrollArea(centralwidget);
+        scrollArea->set
