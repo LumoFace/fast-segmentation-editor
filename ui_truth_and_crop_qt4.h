@@ -107,4 +107,5 @@ public:
         centralwidget = new QWidget(TruthAndCrop);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         scrollArea = new QScrollArea(centralwidget);
-        scrollArea->set
+        scrollArea->setObjectName(QStringLiteral("scrollArea"));
+        scrollArea->setGeometry
