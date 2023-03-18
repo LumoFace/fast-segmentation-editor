@@ -108,4 +108,6 @@ public:
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         scrollArea = new QScrollArea(centralwidget);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
-        scrollArea->setGeometry
+        scrollArea->setGeometry(QRect(10, 10, 871, 801));
+        scrollArea->setWidgetResizable(true);
+       
