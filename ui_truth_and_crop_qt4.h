@@ -110,4 +110,5 @@ public:
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
         scrollArea->setGeometry(QRect(10, 10, 871, 801));
         scrollArea->setWidgetResizable(true);
-       
+        scrollAreaWidgetContents_2 = new QWidget();
+        scrollAreaWidgetCo
