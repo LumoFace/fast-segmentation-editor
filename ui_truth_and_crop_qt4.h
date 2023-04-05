@@ -115,4 +115,6 @@ public:
         scrollAreaWidgetContents_2->setGeometry(QRect(0, 0, 869, 799));
         horizontalLayout = new QHBoxLayout(scrollAreaWidgetContents_2);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        img_view = new QLabel(scrollAreaWidgetCont
+        img_view = new QLabel(scrollAreaWidgetContents_2);
+        img_view->setObjectName(QStringLiteral("img_view"));
+ 
