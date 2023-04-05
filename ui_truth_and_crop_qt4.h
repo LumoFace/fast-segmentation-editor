@@ -117,4 +117,4 @@ public:
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         img_view = new QLabel(scrollAreaWidgetContents_2);
         img_view->setObjectName(QStringLiteral("img_view"));
- 
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Prefe
