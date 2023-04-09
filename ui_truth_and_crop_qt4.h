@@ -119,4 +119,5 @@ public:
         img_view->setObjectName(QStringLiteral("img_view"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
-        sizePolicy.se
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(img_view->sizePolicy().has
