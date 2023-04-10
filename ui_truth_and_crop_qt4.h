@@ -120,4 +120,6 @@ public:
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(img_view->sizePolicy().has
+        sizePolicy.setHeightForWidth(img_view->sizePolicy().hasHeightForWidth());
+        img_view->setSizePolicy(sizePolicy);
+  
