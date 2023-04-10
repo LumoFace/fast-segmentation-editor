@@ -122,4 +122,5 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(img_view->sizePolicy().hasHeightForWidth());
         img_view->setSizePolicy(sizePolicy);
-  
+        img_view->setScaledContents(true);
+        img_view->setWordWra
