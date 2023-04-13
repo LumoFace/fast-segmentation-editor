@@ -123,4 +123,8 @@ public:
         sizePolicy.setHeightForWidth(img_view->sizePolicy().hasHeightForWidth());
         img_view->setSizePolicy(sizePolicy);
         img_view->setScaledContents(true);
-        img_view->setWordWra
+        img_view->setWordWrap(true);
+
+        horizontalLayout->addWidget(img_view);
+
+        scrollA
