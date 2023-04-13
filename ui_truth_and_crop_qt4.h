@@ -127,4 +127,5 @@ public:
 
         horizontalLayout->addWidget(img_view);
 
-        scrollA
+        scrollArea->setWidget(scrollAreaWidgetContents_2);
+        horizontalLayoutWidget = new QW
