@@ -129,4 +129,5 @@ public:
 
         scrollArea->setWidget(scrollAreaWidgetContents_2);
         horizontalLayoutWidget = new QWidget(centralwidget);
-        horizontalLayoutWidget->setObjectName(QStringLiteral("h
+        horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
+        horizontalLayoutWidget->setGeometry(
