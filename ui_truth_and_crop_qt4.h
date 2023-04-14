@@ -130,4 +130,5 @@ public:
         scrollArea->setWidget(scrollAreaWidgetContents_2);
         horizontalLayoutWidget = new QWidget(centralwidget);
         horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(
+        horizontalLayoutWidget->setGeometry(QRect(900, 360, 71, 141));
+        verticalLayout_4 = new QVBoxLayou
