@@ -128,4 +128,5 @@ public:
         horizontalLayout->addWidget(img_view);
 
         scrollArea->setWidget(scrollAreaWidgetContents_2);
-        horizontalLayoutWidget = new QW
+        horizontalLayoutWidget = new QWidget(centralwidget);
+        horizontalLayoutWidget->setObjectName(QStringLiteral("h
