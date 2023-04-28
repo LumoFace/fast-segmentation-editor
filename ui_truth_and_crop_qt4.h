@@ -131,4 +131,5 @@ public:
         horizontalLayoutWidget = new QWidget(centralwidget);
         horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
         horizontalLayoutWidget->setGeometry(QRect(900, 360, 71, 141));
-        verticalLayout_4 = new QVBoxLayou
+        verticalLayout_4 = new QVBoxLayout(horizontalLayoutWidget);
+        verticalLayout_4->setObjectNam
