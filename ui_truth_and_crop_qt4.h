@@ -134,4 +134,5 @@ public:
         verticalLayout_4 = new QVBoxLayout(horizontalLayoutWidget);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
-        compactnessBox = new QSpinBox(horizontalLayoutWidge
+        compactnessBox = new QSpinBox(horizontalLayoutWidget);
+        compactnessBox->setObjectName(QStringLiteral("compactness
