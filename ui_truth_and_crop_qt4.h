@@ -140,4 +140,6 @@ public:
         compactnessBox->setMaximum(999);
         compactnessBox->setValue(20);
 
-        verticalL
+        verticalLayout_4->addWidget(compactnessBox);
+
+        wndBox = new QSpinBox(horiz
