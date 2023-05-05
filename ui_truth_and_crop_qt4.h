@@ -137,4 +137,7 @@ public:
         compactnessBox = new QSpinBox(horizontalLayoutWidget);
         compactnessBox->setObjectName(QStringLiteral("compactnessBox"));
         compactnessBox->setMinimum(1);
-        compactnessBox->setMa
+        compactnessBox->setMaximum(999);
+        compactnessBox->setValue(20);
+
+        verticalL
