@@ -142,4 +142,5 @@ public:
 
         verticalLayout_4->addWidget(compactnessBox);
 
-        wndBox = new QSpinBox(horiz
+        wndBox = new QSpinBox(horizontalLayoutWidget);
+        wndBox->setObjectName(QStringLiter
