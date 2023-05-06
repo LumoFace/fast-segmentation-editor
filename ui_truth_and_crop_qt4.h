@@ -143,4 +143,7 @@ public:
         verticalLayout_4->addWidget(compactnessBox);
 
         wndBox = new QSpinBox(horizontalLayoutWidget);
-        wndBox->setObjectName(QStringLiter
+        wndBox->setObjectName(QStringLiteral("wndBox"));
+        wndBox->setMinimum(2);
+        wndBox->setMaximum(999);
+        wndBox->set
