@@ -150,4 +150,5 @@ public:
 
         verticalLayout_4->addWidget(wndBox);
 
-        segmen
+        segmentsBox = new QSpinBox(horizontalLayoutWidget);
+        segmentsBo
