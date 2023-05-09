@@ -146,4 +146,8 @@ public:
         wndBox->setObjectName(QStringLiteral("wndBox"));
         wndBox->setMinimum(2);
         wndBox->setMaximum(999);
-        wndBox->set
+        wndBox->setValue(112);
+
+        verticalLayout_4->addWidget(wndBox);
+
+        segmen
