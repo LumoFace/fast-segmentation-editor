@@ -152,4 +152,7 @@ public:
 
         segmentsBox = new QSpinBox(horizontalLayoutWidget);
         segmentsBox->setObjectName(QStringLiteral("segmentsBox"));
-        segmentsBox->setMaximum(
+        segmentsBox->setMaximum(9999);
+        segmentsBox->setValue(200);
+
+        verticalLay
