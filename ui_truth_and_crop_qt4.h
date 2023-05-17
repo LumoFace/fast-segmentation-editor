@@ -151,4 +151,5 @@ public:
         verticalLayout_4->addWidget(wndBox);
 
         segmentsBox = new QSpinBox(horizontalLayoutWidget);
-        segmentsBo
+        segmentsBox->setObjectName(QStringLiteral("segmentsBox"));
+        segmentsBox->setMaximum(
