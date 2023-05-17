@@ -155,4 +155,6 @@ public:
         segmentsBox->setMaximum(9999);
         segmentsBox->setValue(200);
 
-        verticalLay
+        verticalLayout_4->addWidget(segmentsBox);
+
+        sigmaBox =
