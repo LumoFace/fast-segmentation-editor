@@ -158,4 +158,5 @@ public:
         verticalLayout_4->addWidget(segmentsBox);
 
         sigmaBox = new QSpinBox(horizontalLayoutWidget);
-        sigmaBox->setObject
+        sigmaBox->setObjectName(QStringLiteral("sigmaBox"));
+        sigmaBox->setValue(3);
