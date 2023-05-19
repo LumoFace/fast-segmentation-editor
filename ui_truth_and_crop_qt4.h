@@ -160,3 +160,7 @@ public:
         sigmaBox = new QSpinBox(horizontalLayoutWidget);
         sigmaBox->setObjectName(QStringLiteral("sigmaBox"));
         sigmaBox->setValue(3);
+
+        verticalLayout_4->addWidget(sigmaBox);
+
+        dsBox = new QSpinBo
