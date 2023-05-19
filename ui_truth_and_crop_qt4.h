@@ -163,4 +163,5 @@ public:
 
         verticalLayout_4->addWidget(sigmaBox);
 
-        dsBox = new QSpinBo
+        dsBox = new QSpinBox(horizontalLayoutWidget);
+        dsBox->setObjectName(QStri
