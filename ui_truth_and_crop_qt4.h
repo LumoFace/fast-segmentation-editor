@@ -167,4 +167,6 @@ public:
         dsBox->setObjectName(QStringLiteral("dsBox"));
         dsBox->setValue(3);
 
-        verticalLayout_4->ad
+        verticalLayout_4->addWidget(dsBox);
+
+        horizontalLayoutWidget_2 = new QWidget(central
