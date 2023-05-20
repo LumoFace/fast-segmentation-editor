@@ -169,4 +169,5 @@ public:
 
         verticalLayout_4->addWidget(dsBox);
 
-        horizontalLayoutWidget_2 = new QWidget(central
+        horizontalLayoutWidget_2 = new QWidget(centralwidget);
+        horizontalLayoutWidget_2->setObjectNam
