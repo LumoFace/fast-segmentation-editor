@@ -170,4 +170,5 @@ public:
         verticalLayout_4->addWidget(dsBox);
 
         horizontalLayoutWidget_2 = new QWidget(centralwidget);
-        horizontalLayoutWidget_2->setObjectNam
+        horizontalLayoutWidget_2->setObjectName(QStringLiteral("horizontalLayoutWidget_2"));
+        horizonta
