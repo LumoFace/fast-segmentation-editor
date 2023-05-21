@@ -174,4 +174,5 @@ public:
         horizontalLayoutWidget_2->setGeometry(QRect(980, 360, 211, 141));
         verticalLayout_5 = new QVBoxLayout(horizontalLayoutWidget_2);
         verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
-        
+        verticalLayout_5->setContentsMargins(0, 0, 0, 0);
+        label_3 = new
