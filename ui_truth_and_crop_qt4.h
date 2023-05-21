@@ -171,4 +171,5 @@ public:
 
         horizontalLayoutWidget_2 = new QWidget(centralwidget);
         horizontalLayoutWidget_2->setObjectName(QStringLiteral("horizontalLayoutWidget_2"));
-        horizonta
+        horizontalLayoutWidget_2->setGeometry(QRect(980, 360, 211, 141));
+        verticalLayou
