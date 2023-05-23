@@ -176,4 +176,8 @@ public:
         verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
         verticalLayout_5->setContentsMargins(0, 0, 0, 0);
         label_3 = new QLabel(horizontalLayoutWidget_2);
-        label_3->setObjectName(QStri
+        label_3->setObjectName(QStringLiteral("label_3"));
+
+        verticalLayout_5->addWidget(label_3);
+
+      
