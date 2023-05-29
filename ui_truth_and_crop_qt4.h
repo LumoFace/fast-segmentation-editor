@@ -183,4 +183,7 @@ public:
         label_8 = new QLabel(horizontalLayoutWidget_2);
         label_8->setObjectName(QStringLiteral("label_8"));
 
-        verticalLayout_5->addWidget(label
+        verticalLayout_5->addWidget(label_8);
+
+        label_2 = new QLabel(horizontalLayoutWidget_2);
+        label_
