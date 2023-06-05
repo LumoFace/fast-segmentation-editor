@@ -200,4 +200,5 @@ public:
 
         verticalLayout_5->addWidget(label_7);
 
-        horizontalLayoutWidget_3 = new
+        horizontalLayoutWidget_3 = new QWidget(centralwidget);
+        horizontalLayoutWidget_3->setO
