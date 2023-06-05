@@ -201,4 +201,5 @@ public:
         verticalLayout_5->addWidget(label_7);
 
         horizontalLayoutWidget_3 = new QWidget(centralwidget);
-        horizontalLayoutWidget_3->setO
+        horizontalLayoutWidget_3->setObjectName(QStringLiteral("horizontalLayoutWidget_3"));
+        hori
