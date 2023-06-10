@@ -202,4 +202,5 @@ public:
 
         horizontalLayoutWidget_3 = new QWidget(centralwidget);
         horizontalLayoutWidget_3->setObjectName(QStringLiteral("horizontalLayoutWidget_3"));
-        hori
+        horizontalLayoutWidget_3->setGeometry(QRect(900, 570, 298, 191));
+   
