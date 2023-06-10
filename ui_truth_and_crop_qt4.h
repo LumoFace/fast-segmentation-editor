@@ -204,4 +204,4 @@ public:
         horizontalLayoutWidget_3->setObjectName(QStringLiteral("horizontalLayoutWidget_3"));
         horizontalLayoutWidget_3->setGeometry(QRect(900, 570, 298, 191));
         horizontalLayout_4 = new QHBoxLayout(horizontalLayoutWidget_3);
-    
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"
