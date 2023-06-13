@@ -208,4 +208,5 @@ public:
         horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        class_other =
+        class_other = new QRadioButton(horizontalLayoutWidget_3);
+        class_oth
