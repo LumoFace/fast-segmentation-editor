@@ -207,4 +207,5 @@ public:
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
         horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
         verticalLayout = new QVBoxLayout();
-        verticalLayout->se
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        class_other =
