@@ -211,4 +211,6 @@ public:
         class_other = new QRadioButton(horizontalLayoutWidget_3);
         class_other->setObjectName(QStringLiteral("class_other"));
 
-        verticalLayout->ad
+        verticalLayout->addWidget(class_other);
+
+        class_mussel = new QRadioButton(horizontalLayoutWidget
