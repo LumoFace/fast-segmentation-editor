@@ -219,4 +219,6 @@ public:
         verticalLayout->addWidget(class_mussel);
 
         class_ciona = new QRadioButton(horizontalLayoutWidget_3);
-        clas
+        class_ciona->setObjectName(QStringLiteral("class_ciona"));
+
+        ver
