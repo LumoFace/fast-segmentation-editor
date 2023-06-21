@@ -224,4 +224,6 @@ public:
         verticalLayout->addWidget(class_ciona);
 
         class_styela = new QRadioButton(horizontalLayoutWidget_3);
-        cl
+        class_styela->setObjectName(QStringLiteral("class_styela"));
+
+        vertical
