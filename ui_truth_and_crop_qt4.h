@@ -228,4 +228,5 @@ public:
 
         verticalLayout->addWidget(class_styela);
 
-        class_void = new QRadioButton(
+        class_void = new QRadioButton(horizontalLayoutWidget_3);
+        class_void->setObjectName(QStringLiteral
