@@ -236,4 +236,5 @@ public:
 
         horizontalLayout_4->addLayout(verticalLayout);
 
-       
+        verticalLayout_6 = new QVBoxLayout();
+        verticalLayout_6-
