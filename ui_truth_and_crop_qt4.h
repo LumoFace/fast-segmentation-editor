@@ -240,4 +240,8 @@ public:
         verticalLayout_6->setObjectName(QStringLiteral("verticalLayout_6"));
         lcdNumber_0 = new QLCDNumber(horizontalLayoutWidget_3);
         lcdNumber_0->setObjectName(QStringLiteral("lcdNumber_0"));
-        lcdNumber_0->setDigitC
+        lcdNumber_0->setDigitCount(3);
+
+        verticalLayout_6->addWidget(lcdNumber_0);
+
+  
