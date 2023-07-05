@@ -237,4 +237,5 @@ public:
         horizontalLayout_4->addLayout(verticalLayout);
 
         verticalLayout_6 = new QVBoxLayout();
-        verticalLayout_6-
+        verticalLayout_6->setObjectName(QStringLiteral("verticalLayout_6"));
+        lcdNumbe
