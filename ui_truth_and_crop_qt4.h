@@ -250,4 +250,5 @@ public:
 
         verticalLayout_6->addWidget(lcdNumber_1);
 
-        lcdN
+        lcdNumber_2 = new QLCDNumber(horizontalLayoutWidget_3);
+        lcdNumber_2->s
