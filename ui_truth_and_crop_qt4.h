@@ -262,4 +262,5 @@ public:
 
         verticalLayout_6->addWidget(lcdNumber_3);
 
-        lcdNumber_4 = new
+        lcdNumber_4 = new QLCDNumber(horizontalLayoutWidget_3);
+        lcdNumber_4->setObjectName(QS
