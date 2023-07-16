@@ -269,4 +269,4 @@ public:
         verticalLayout_6->addWidget(lcdNumber_4);
 
 
-   
+        horizontalLayout_4->addLayout(verticalLayout
