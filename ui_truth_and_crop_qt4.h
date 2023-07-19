@@ -269,4 +269,7 @@ public:
         verticalLayout_6->addWidget(lcdNumber_4);
 
 
-        horizontalLayout_4->addLayout(verticalLayout
+        horizontalLayout_4->addLayout(verticalLayout_6);
+
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->set
