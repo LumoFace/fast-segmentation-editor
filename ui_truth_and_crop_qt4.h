@@ -272,4 +272,5 @@ public:
         horizontalLayout_4->addLayout(verticalLayout_6);
 
         verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->set
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        refreshBtn = 
