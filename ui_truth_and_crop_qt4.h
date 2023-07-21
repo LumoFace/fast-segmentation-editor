@@ -273,4 +273,5 @@ public:
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        refreshBtn = 
+        refreshBtn = new QPushButton(horizontalLayoutWidget_3);
+        refreshBtn->setObjec
