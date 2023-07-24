@@ -278,4 +278,5 @@ public:
 
         verticalLayout_2->addWidget(refreshBtn);
 
-        cr
+        cropBtn = new QPushButton(horizontalLayoutWidget_3);
+        cropBtn->setObje
