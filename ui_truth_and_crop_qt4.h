@@ -279,4 +279,6 @@ public:
         verticalLayout_2->addWidget(refreshBtn);
 
         cropBtn = new QPushButton(horizontalLayoutWidget_3);
-        cropBtn->setObje
+        cropBtn->setObjectName(QStringLiteral("cropBtn"));
+
+        verticalLayout_2->addWid
