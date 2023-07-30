@@ -284,4 +284,6 @@ public:
         verticalLayout_2->addWidget(cropBtn);
 
         toggleBtn = new QPushButton(horizontalLayoutWidget_3);
-     
+        toggleBtn->setObjectName(QStringLiteral("toggleBtn"));
+
+        verticalLayout
