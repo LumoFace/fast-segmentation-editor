@@ -289,4 +289,6 @@ public:
         verticalLayout_2->addWidget(toggleBtn);
 
         doneBtn = new QPushButton(horizontalLayoutWidget_3);
-        doneBtn->setO
+        doneBtn->setObjectName(QStringLiteral("doneBtn"));
+
+        verticalLayout_2->addWidget(don
