@@ -291,4 +291,6 @@ public:
         doneBtn = new QPushButton(horizontalLayoutWidget_3);
         doneBtn->setObjectName(QStringLiteral("doneBtn"));
 
-        verticalLayout_2->addWidget(don
+        verticalLayout_2->addWidget(doneBtn);
+
+        enforceConnectivityBox = new QCheckBox(horizontalLayoutWidget_
