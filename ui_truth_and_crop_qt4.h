@@ -294,4 +294,9 @@ public:
         verticalLayout_2->addWidget(doneBtn);
 
         enforceConnectivityBox = new QCheckBox(horizontalLayoutWidget_3);
-        enforceConnectivityBox->setObjectName(QStringLiteral("enforceCo
+        enforceConnectivityBox->setObjectName(QStringLiteral("enforceConnectivityBox"));
+
+        verticalLayout_2->addWidget(enforceConnectivityBox);
+
+
+        ho
