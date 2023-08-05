@@ -299,4 +299,6 @@ public:
         verticalLayout_2->addWidget(enforceConnectivityBox);
 
 
-        ho
+        horizontalLayout_4->addLayout(verticalLayout_2);
+
+        verticalLayoutWidge
