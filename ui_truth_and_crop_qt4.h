@@ -302,4 +302,5 @@ public:
         horizontalLayout_4->addLayout(verticalLayout_2);
 
         verticalLayoutWidget_3 = new QWidget(centralwidget);
-        verticalLayoutWidget_3->setObjec
+        verticalLayoutWidget_3->setObjectName(QStringLiteral("verticalLayoutWidget_3"));
+        verticalLayoutWidget_3->setGeom
