@@ -303,4 +303,5 @@ public:
 
         verticalLayoutWidget_3 = new QWidget(centralwidget);
         verticalLayoutWidget_3->setObjectName(QStringLiteral("verticalLayoutWidget_3"));
-        verticalLayoutWidget_3->setGeom
+        verticalLayoutWidget_3->setGeometry(QRect(900, 80, 291, 188));
+        verticalLayout_3 = new Q
