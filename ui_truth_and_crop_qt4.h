@@ -301,4 +301,5 @@ public:
 
         horizontalLayout_4->addLayout(verticalLayout_2);
 
-        verticalLayoutWidge
+        verticalLayoutWidget_3 = new QWidget(centralwidget);
+        verticalLayoutWidget_3->setObjec
