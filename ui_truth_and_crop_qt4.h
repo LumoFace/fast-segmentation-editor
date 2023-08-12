@@ -310,4 +310,6 @@ public:
         label_6 = new QLabel(verticalLayoutWidget_3);
         label_6->setObjectName(QStringLiteral("label_6"));
 
-      
+        verticalLayout_3->addWidget(label_6);
+
+        imageField = new QTex
