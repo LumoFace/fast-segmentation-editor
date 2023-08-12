@@ -306,4 +306,5 @@ public:
         verticalLayoutWidget_3->setGeometry(QRect(900, 80, 291, 188));
         verticalLayout_3 = new QVBoxLayout(verticalLayoutWidget_3);
         verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
-        verticalLayout_3->setContentsMa
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        label_6 = new QLabel(verticalLayoutWidget_3);
