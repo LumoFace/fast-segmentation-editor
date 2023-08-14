@@ -313,4 +313,6 @@ public:
         verticalLayout_3->addWidget(label_6);
 
         imageField = new QTextEdit(verticalLayoutWidget_3);
-        imageField->setObjectNam
+        imageField->setObjectName(QStringLiteral("imageField"));
+
+        verticalLayout_3->addWidget
