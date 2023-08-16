@@ -320,4 +320,6 @@ public:
         label_4 = new QLabel(verticalLayoutWidget_3);
         label_4->setObjectName(QStringLiteral("label_4"));
 
-       
+        verticalLayout_3->addWidget(label_4);
+
+        outputPath = new Q
