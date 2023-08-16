@@ -323,4 +323,6 @@ public:
         verticalLayout_3->addWidget(label_4);
 
         outputPath = new QTextEdit(verticalLayoutWidget_3);
-        outputPath->s
+        outputPath->setObjectName(QStringLiteral("outputPath"));
+
+        verticalLayout_3->addWidg
