@@ -318,4 +318,6 @@ public:
         verticalLayout_3->addWidget(imageField);
 
         label_4 = new QLabel(verticalLayoutWidget_3);
- 
+        label_4->setObjectName(QStringLiteral("label_4"));
+
+       
