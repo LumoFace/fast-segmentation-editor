@@ -322,4 +322,5 @@ public:
 
         verticalLayout_3->addWidget(label_4);
 
-        outputPath = new Q
+        outputPath = new QTextEdit(verticalLayoutWidget_3);
+        outputPath->s
