@@ -325,4 +325,6 @@ public:
         outputPath = new QTextEdit(verticalLayoutWidget_3);
         outputPath->setObjectName(QStringLiteral("outputPath"));
 
-        verticalLayout_3->addWidg
+        verticalLayout_3->addWidget(outputPath);
+
+        progressBar = new QProgressBar(centralwidget)
