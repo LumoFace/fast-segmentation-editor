@@ -329,4 +329,6 @@ public:
 
         progressBar = new QProgressBar(centralwidget);
         progressBar->setObjectName(QStringLiteral("progressBar"));
-        progressBar-
+        progressBar->setGeometry(QRect(900, 770, 301, 31));
+        progressBar->setValue(24);
+   
