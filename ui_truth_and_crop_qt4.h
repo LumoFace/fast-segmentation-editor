@@ -327,4 +327,6 @@ public:
 
         verticalLayout_3->addWidget(outputPath);
 
-        progressBar = new QProgressBar(centralwidget)
+        progressBar = new QProgressBar(centralwidget);
+        progressBar->setObjectName(QStringLiteral("progressBar"));
+        progressBar-
