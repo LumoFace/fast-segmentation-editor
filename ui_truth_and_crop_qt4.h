@@ -332,4 +332,5 @@ public:
         progressBar->setGeometry(QRect(900, 770, 301, 31));
         progressBar->setValue(24);
         horizontalLayoutWidget_4 = new QWidget(centralwidget);
-        horizontalLayoutWidget_4->setObjectName(QStringLit
+        horizontalLayoutWidget_4->setObjectName(QStringLiteral("horizontalLayoutWidget_4"));
+        horizontalLayoutWidget_4->setG
