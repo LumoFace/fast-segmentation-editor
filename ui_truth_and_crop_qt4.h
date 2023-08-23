@@ -337,4 +337,5 @@ public:
         horizontalLayout_5 = new QHBoxLayout(horizontalLayoutWidget_4);
         horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
         horizontalLayout_5->setContentsMargins(0, 0, 0, 0);
-        inFile = new QP
+        inFile = new QPushButton(horizontalLayoutWidget_4);
+        inFile->s
