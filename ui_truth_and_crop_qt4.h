@@ -345,4 +345,7 @@ public:
         outFile = new QPushButton(horizontalLayoutWidget_4);
         outFile->setObjectName(QStringLiteral("outFile"));
 
-        horizontalLayout_5->addWid
+        horizontalLayout_5->addWidget(outFile);
+
+        horizontalLayoutWidget_5 = new QWidget(centralwidget);
+      
