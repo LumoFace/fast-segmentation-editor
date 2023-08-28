@@ -343,4 +343,6 @@ public:
         horizontalLayout_5->addWidget(inFile);
 
         outFile = new QPushButton(horizontalLayoutWidget_4);
-        outFile->setObje
+        outFile->setObjectName(QStringLiteral("outFile"));
+
+        horizontalLayout_5->addWid
