@@ -348,4 +348,5 @@ public:
         horizontalLayout_5->addWidget(outFile);
 
         horizontalLayoutWidget_5 = new QWidget(centralwidget);
-        horizontalLayoutWidget_5->setObjectName(QStringLiteral("horizontalLayoutWi
+        horizontalLayoutWidget_5->setObjectName(QStringLiteral("horizontalLayoutWidget_5"));
+        horizontalLayoutWidget_5->setGeometry(QRect(
