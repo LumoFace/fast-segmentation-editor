@@ -350,4 +350,5 @@ public:
         horizontalLayoutWidget_5 = new QWidget(centralwidget);
         horizontalLayoutWidget_5->setObjectName(QStringLiteral("horizontalLayoutWidget_5"));
         horizontalLayoutWidget_5->setGeometry(QRect(900, 280, 291, 51));
-        horizontalLayout_6 = ne
+        horizontalLayout_6 = new QHBoxLayout(horizontalLayoutWidget_5);
+        horizontalL
