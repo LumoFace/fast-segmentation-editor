@@ -352,4 +352,5 @@ public:
         horizontalLayoutWidget_5->setGeometry(QRect(900, 280, 291, 51));
         horizontalLayout_6 = new QHBoxLayout(horizontalLayoutWidget_5);
         horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
-        horizon
+        horizontalLayout_6->setContentsMargins(0, 0, 0, 0);
+        previousBtn = new QPushButto
