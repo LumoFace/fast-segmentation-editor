@@ -354,4 +354,6 @@ public:
         horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
         horizontalLayout_6->setContentsMargins(0, 0, 0, 0);
         previousBtn = new QPushButton(horizontalLayoutWidget_5);
-        previousBtn->setObjectName(QStringLiter
+        previousBtn->setObjectName(QStringLiteral("previousBtn"));
+
+        horizontalLayout_6->addWidget(pre
