@@ -356,4 +356,6 @@ public:
         previousBtn = new QPushButton(horizontalLayoutWidget_5);
         previousBtn->setObjectName(QStringLiteral("previousBtn"));
 
-        horizontalLayout_6->addWidget(pre
+        horizontalLayout_6->addWidget(previousBtn);
+
+        nextBtn = new QPushButton(horizontalLayout
