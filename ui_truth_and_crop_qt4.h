@@ -363,4 +363,5 @@ public:
 
         horizontalLayout_6->addWidget(nextBtn);
 
-  
+        label_5 = new QLabel(centralwidget);
+        label_5->setOb
