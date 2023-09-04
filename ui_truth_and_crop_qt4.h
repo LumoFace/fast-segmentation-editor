@@ -364,4 +364,5 @@ public:
         horizontalLayout_6->addWidget(nextBtn);
 
         label_5 = new QLabel(centralwidget);
-        label_5->setOb
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setGeometr
