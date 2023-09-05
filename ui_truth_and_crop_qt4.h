@@ -365,4 +365,6 @@ public:
 
         label_5 = new QLabel(centralwidget);
         label_5->setObjectName(QStringLiteral("label_5"));
-        label_5->setGeometr
+        label_5->setGeometry(QRect(900, 550, 140, 16));
+        QFont font;
+        font.setFamily(QStringL
