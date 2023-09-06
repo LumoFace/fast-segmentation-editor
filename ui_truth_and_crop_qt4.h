@@ -367,4 +367,6 @@ public:
         label_5->setObjectName(QStringLiteral("label_5"));
         label_5->setGeometry(QRect(900, 550, 140, 16));
         QFont font;
-        font.setFamily(QStringL
+        font.setFamily(QStringLiteral("Ubuntu Mono"));
+        font.setPointSize(12);
+        font.setBold(tru
