@@ -369,4 +369,7 @@ public:
         QFont font;
         font.setFamily(QStringLiteral("Ubuntu Mono"));
         font.setPointSize(12);
-        font.setBold(tru
+        font.setBold(true);
+        font.setUnderline(false);
+        font.setWeight(75);
+     
