@@ -372,4 +372,5 @@ public:
         font.setBold(true);
         font.setUnderline(false);
         font.setWeight(75);
-     
+        label_5->setFont(font);
+        label_5->setAlignment(Qt::Alig
