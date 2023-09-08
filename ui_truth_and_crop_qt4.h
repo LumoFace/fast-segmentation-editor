@@ -373,4 +373,5 @@ public:
         font.setUnderline(false);
         font.setWeight(75);
         label_5->setFont(font);
-        label_5->setAlignment(Qt::Alig
+        label_5->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
+        groupB
