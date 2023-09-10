@@ -375,4 +375,5 @@ public:
         label_5->setFont(font);
         label_5->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         groupBox = new QGroupBox(centralwidget);
-        groupBox->setObjectName(QStringLiter
+        groupBox->setObjectName(QStringLiteral("groupBox"));
+        groupBox->setGeometry(QRect(890, 330, 311, 1
