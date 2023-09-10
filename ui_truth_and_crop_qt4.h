@@ -374,4 +374,5 @@ public:
         font.setWeight(75);
         label_5->setFont(font);
         label_5->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
-        groupB
+        groupBox = new QGroupBox(centralwidget);
+        groupBox->setObjectName(QStringLiter
