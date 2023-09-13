@@ -378,4 +378,5 @@ public:
         groupBox->setObjectName(QStringLiteral("groupBox"));
         groupBox->setGeometry(QRect(890, 330, 311, 181));
         groupBox_2 = new QGroupBox(centralwidget);
-       
+        groupBox_2->setObjectName(QStringLiteral("groupBox_2"));
+        gro
