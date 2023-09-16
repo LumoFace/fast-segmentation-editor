@@ -385,4 +385,5 @@ public:
         groupBox_3->setGeometry(QRect(890, 530, 311, 281));
         textEdit = new QTextEdit(centralwidget);
         textEdit->setObjectName(QStringLiteral("textEdit"));
-        text
+        textEdit->setGeometry(QRect(1100, 520, 104, 21));
+        label_9 = new QL
