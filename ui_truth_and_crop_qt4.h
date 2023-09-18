@@ -386,4 +386,5 @@ public:
         textEdit = new QTextEdit(centralwidget);
         textEdit->setObjectName(QStringLiteral("textEdit"));
         textEdit->setGeometry(QRect(1100, 520, 104, 21));
-        label_9 = new QL
+        label_9 = new QLabel(centralwidget);
+        label_9->setObjectName(QStringLiteral("l
