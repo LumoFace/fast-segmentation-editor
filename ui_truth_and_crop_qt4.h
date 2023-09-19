@@ -389,4 +389,6 @@ public:
         label_9 = new QLabel(centralwidget);
         label_9->setObjectName(QStringLiteral("label_9"));
         label_9->setGeometry(QRect(1056, 520, 41, 21));
-        TruthAndCrop->setCe
+        TruthAndCrop->setCentralWidget(centralwidget);
+        groupBox_3->raise();
+        gro
