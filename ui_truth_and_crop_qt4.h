@@ -387,4 +387,6 @@ public:
         textEdit->setObjectName(QStringLiteral("textEdit"));
         textEdit->setGeometry(QRect(1100, 520, 104, 21));
         label_9 = new QLabel(centralwidget);
-        label_9->setObjectName(QStringLiteral("l
+        label_9->setObjectName(QStringLiteral("label_9"));
+        label_9->setGeometry(QRect(1056, 520, 41, 21));
+        TruthAndCrop->setCe
