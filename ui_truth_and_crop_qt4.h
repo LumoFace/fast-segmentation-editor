@@ -391,4 +391,6 @@ public:
         label_9->setGeometry(QRect(1056, 520, 41, 21));
         TruthAndCrop->setCentralWidget(centralwidget);
         groupBox_3->raise();
-        gro
+        groupBox_2->raise();
+        groupBox->raise();
+        scrollAre
