@@ -395,4 +395,5 @@ public:
         groupBox->raise();
         scrollArea->raise();
         horizontalLayoutWidget->raise();
- 
+        horizontalLayoutWidget_2->raise();
+        horizontalLa
