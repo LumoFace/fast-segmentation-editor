@@ -396,4 +396,6 @@ public:
         scrollArea->raise();
         horizontalLayoutWidget->raise();
         horizontalLayoutWidget_2->raise();
-        horizontalLa
+        horizontalLayoutWidget_3->raise();
+        verticalLayoutWidget_3->raise();
+        progres
