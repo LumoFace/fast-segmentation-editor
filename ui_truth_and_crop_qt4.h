@@ -398,4 +398,6 @@ public:
         horizontalLayoutWidget_2->raise();
         horizontalLayoutWidget_3->raise();
         verticalLayoutWidget_3->raise();
-        progres
+        progressBar->raise();
+        horizontalLayoutWidget_4->raise();
+        hor
