@@ -402,4 +402,6 @@ public:
         horizontalLayoutWidget_4->raise();
         horizontalLayoutWidget_5->raise();
         label_5->raise();
-     
+        textEdit->raise();
+        label_9->raise();
+        menubar = 
