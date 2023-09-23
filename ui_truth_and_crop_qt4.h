@@ -400,4 +400,6 @@ public:
         verticalLayoutWidget_3->raise();
         progressBar->raise();
         horizontalLayoutWidget_4->raise();
-        hor
+        horizontalLayoutWidget_5->raise();
+        label_5->raise();
+     
