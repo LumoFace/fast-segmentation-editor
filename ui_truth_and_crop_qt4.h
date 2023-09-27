@@ -404,4 +404,5 @@ public:
         label_5->raise();
         textEdit->raise();
         label_9->raise();
-        menubar = 
+        menubar = new QMenuBar(TruthAndCrop);
+        menubar->setObjectName(QStringLiteral("
