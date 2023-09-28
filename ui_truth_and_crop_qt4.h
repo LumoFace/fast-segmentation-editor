@@ -405,4 +405,6 @@ public:
         textEdit->raise();
         label_9->raise();
         menubar = new QMenuBar(TruthAndCrop);
-        menubar->setObjectName(QStringLiteral("
+        menubar->setObjectName(QStringLiteral("menubar"));
+        menubar->setGeometry(QRect(0, 0, 1212, 19));
+    
