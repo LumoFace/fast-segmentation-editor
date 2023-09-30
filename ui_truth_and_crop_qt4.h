@@ -408,4 +408,5 @@ public:
         menubar->setObjectName(QStringLiteral("menubar"));
         menubar->setGeometry(QRect(0, 0, 1212, 19));
         TruthAndCrop->setMenuBar(menubar);
-        statusbar =
+        statusbar = new QStatusBar(TruthAndCrop);
+        statusbar->setObjec
