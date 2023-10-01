@@ -410,4 +410,8 @@ public:
         TruthAndCrop->setMenuBar(menubar);
         statusbar = new QStatusBar(TruthAndCrop);
         statusbar->setObjectName(QStringLiteral("statusbar"));
-        TruthAndCrop->setStatu
+        TruthAndCrop->setStatusBar(statusbar);
+
+        retranslateUi(TruthAndCrop);
+
+        QMetaObject:
