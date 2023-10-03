@@ -414,4 +414,7 @@ public:
 
         retranslateUi(TruthAndCrop);
 
-        QMetaObject:
+        QMetaObject::connectSlotsByName(TruthAndCrop);
+    } // setupUi
+
+    void retranslate
