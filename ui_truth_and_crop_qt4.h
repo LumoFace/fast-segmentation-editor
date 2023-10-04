@@ -417,4 +417,6 @@ public:
         QMetaObject::connectSlotsByName(TruthAndCrop);
     } // setupUi
 
-    void retranslate
+    void retranslateUi(QMainWindow *TruthAndCrop)
+    {
+        TruthAndCrop->setWindowTitle(Q
