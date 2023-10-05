@@ -419,4 +419,4 @@ public:
 
     void retranslateUi(QMainWindow *TruthAndCrop)
     {
-        TruthAndCrop->setWindowTitle(Q
+        TruthAndCrop->setWindowTitle(QApplication::translate("TruthAndCrop", "MainWindow", 0));
