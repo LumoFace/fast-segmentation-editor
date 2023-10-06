@@ -420,3 +420,5 @@ public:
     void retranslateUi(QMainWindow *TruthAndCrop)
     {
         TruthAndCrop->setWindowTitle(QApplication::translate("TruthAndCrop", "MainWindow", 0));
+        img_view->setText(QString());
+        label_3->setText(QApplicat
