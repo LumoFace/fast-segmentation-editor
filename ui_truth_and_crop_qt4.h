@@ -422,4 +422,5 @@ public:
         TruthAndCrop->setWindowTitle(QApplication::translate("TruthAndCrop", "MainWindow", 0));
         img_view->setText(QString());
         label_3->setText(QApplication::translate("TruthAndCrop", "Superpixel compactness", 0));
-        label_8->setText(QApplication::translate("TruthAndCrop", "Crop window siz
+        label_8->setText(QApplication::translate("TruthAndCrop", "Crop window size / 2", 0));
+        label_2->setText(QApplication::translate("
