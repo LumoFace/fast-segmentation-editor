@@ -423,4 +423,5 @@ public:
         img_view->setText(QString());
         label_3->setText(QApplication::translate("TruthAndCrop", "Superpixel compactness", 0));
         label_8->setText(QApplication::translate("TruthAndCrop", "Crop window size / 2", 0));
-        label_2->setText(QApplication::translate("
+        label_2->setText(QApplication::translate("TruthAndCrop", "Number of SLIC segments", 0));
+        label->setText(QAp
