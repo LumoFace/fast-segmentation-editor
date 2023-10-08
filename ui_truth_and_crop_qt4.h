@@ -424,4 +424,4 @@ public:
         label_3->setText(QApplication::translate("TruthAndCrop", "Superpixel compactness", 0));
         label_8->setText(QApplication::translate("TruthAndCrop", "Crop window size / 2", 0));
         label_2->setText(QApplication::translate("TruthAndCrop", "Number of SLIC segments", 0));
-        label->setText(QAp
+        label->setText(QApplication::translate("TruthAndCrop", "Gaussian sigma smoothing", 0));
