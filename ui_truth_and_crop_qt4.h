@@ -426,4 +426,5 @@ public:
         label_2->setText(QApplication::translate("TruthAndCrop", "Number of SLIC segments", 0));
         label->setText(QApplication::translate("TruthAndCrop", "Gaussian sigma smoothing", 0));
         label_7->setText(QApplication::translate("TruthAndCrop", "Down-sampling factor", 0));
-        class_other->setText(QApplication::translate("Trut
+        class_other->setText(QApplication::translate("TruthAndCrop", "Other", 0));
+        class_mussel->setText(QApplication::
