@@ -430,4 +430,5 @@ public:
         class_mussel->setText(QApplication::translate("TruthAndCrop", "Mussel", 0));
         class_ciona->setText(QApplication::translate("TruthAndCrop", "Ciona", 0));
         class_styela->setText(QApplication::translate("TruthAndCrop", "Styela", 0));
-        class_void->setText(QApplication::translate("TruthAndCrop", "Void", 0
+        class_void->setText(QApplication::translate("TruthAndCrop", "Void", 0));
+        refreshBtn->setText(QApplication::translate("TruthAndCrop", "Refresh"
