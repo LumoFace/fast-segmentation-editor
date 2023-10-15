@@ -431,4 +431,5 @@ public:
         class_ciona->setText(QApplication::translate("TruthAndCrop", "Ciona", 0));
         class_styela->setText(QApplication::translate("TruthAndCrop", "Styela", 0));
         class_void->setText(QApplication::translate("TruthAndCrop", "Void", 0));
-        refreshBtn->setText(QApplication::translate("TruthAndCrop", "Refresh"
+        refreshBtn->setText(QApplication::translate("TruthAndCrop", "Refresh", 0));
+        cropBtn->setText(QApplication::translate("Truth
