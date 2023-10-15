@@ -429,4 +429,4 @@ public:
         class_other->setText(QApplication::translate("TruthAndCrop", "Other", 0));
         class_mussel->setText(QApplication::translate("TruthAndCrop", "Mussel", 0));
         class_ciona->setText(QApplication::translate("TruthAndCrop", "Ciona", 0));
-        class_sty
+        class_styela->setText(QApplication::translate("TruthAndCrop", "Styela", 0));
