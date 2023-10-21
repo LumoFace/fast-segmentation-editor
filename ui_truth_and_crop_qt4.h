@@ -433,4 +433,5 @@ public:
         class_void->setText(QApplication::translate("TruthAndCrop", "Void", 0));
         refreshBtn->setText(QApplication::translate("TruthAndCrop", "Refresh", 0));
         cropBtn->setText(QApplication::translate("TruthAndCrop", "Crop", 0));
-        toggleBtn->setText(QApplication::transl
+        toggleBtn->setText(QApplication::translate("TruthAndCrop", "Toggle", 0));
+        doneBtn->setText(QApplication::
