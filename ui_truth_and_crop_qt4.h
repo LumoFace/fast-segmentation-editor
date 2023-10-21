@@ -435,4 +435,5 @@ public:
         cropBtn->setText(QApplication::translate("TruthAndCrop", "Crop", 0));
         toggleBtn->setText(QApplication::translate("TruthAndCrop", "Toggle", 0));
         doneBtn->setText(QApplication::translate("TruthAndCrop", "Save", 0));
-        enforceConnectivityBox->setTe
+        enforceConnectivityBox->setText(QApplication::translate("TruthAndCrop", "Enforce Connect.", 0));
+        label_6->setText(
