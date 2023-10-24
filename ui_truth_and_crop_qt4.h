@@ -436,4 +436,5 @@ public:
         toggleBtn->setText(QApplication::translate("TruthAndCrop", "Toggle", 0));
         doneBtn->setText(QApplication::translate("TruthAndCrop", "Save", 0));
         enforceConnectivityBox->setText(QApplication::translate("TruthAndCrop", "Enforce Connect.", 0));
-        label_6->setText(
+        label_6->setText(QApplication::translate("TruthAndCrop", " Image", 0));
+        imageFi
