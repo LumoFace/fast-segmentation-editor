@@ -437,4 +437,4 @@ public:
         doneBtn->setText(QApplication::translate("TruthAndCrop", "Save", 0));
         enforceConnectivityBox->setText(QApplication::translate("TruthAndCrop", "Enforce Connect.", 0));
         label_6->setText(QApplication::translate("TruthAndCrop", " Image", 0));
-        imageFi
+        imageField->setHtml(QApplication::translate("TruthAndCrop", "<!DOCTYPE HTML PUBLIC \"-/
