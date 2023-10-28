@@ -437,4 +437,5 @@ public:
         doneBtn->setText(QApplication::translate("TruthAndCrop", "Save", 0));
         enforceConnectivityBox->setText(QApplication::translate("TruthAndCrop", "Enforce Connect.", 0));
         label_6->setText(QApplication::translate("TruthAndCrop", " Image", 0));
-        imageField->setHtml(QApplication::translate("TruthAndCrop", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/
+        imageField->setHtml(QApplication::translate("TruthAndCrop", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1
