@@ -444,4 +444,4 @@ public:
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:11pt;\"><br /></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:11pt;\"><br /></p></body></html>", 0));
         label_4->setText(QApplication::translate("TruthAndCrop", " Output Path", 0));
-        outputPath->setHtml(QApplication::trans
+        outputPath->setHtml(QApplication::translate("TruthAndCrop", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" 
