@@ -452,4 +452,5 @@ public:
         inFile->setText(QApplication::translate("TruthAndCrop", "Input File", 0));
         outFile->setText(QApplication::translate("TruthAndCrop", "Output Path", 0));
         previousBtn->setText(QApplication::translate("TruthAndCrop", "Previous Image", 0));
-        nextBtn->setText(QApplication::translate("Tru
+        nextBtn->setText(QApplication::translate("TruthAndCrop", "Next Image", 0));
+        label_5->setText(QApplication::translate("Tr
