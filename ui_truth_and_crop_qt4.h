@@ -451,4 +451,4 @@ public:
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Ubuntu'; font-size:11pt;\"><br /></p></body></html>", 0));
         inFile->setText(QApplication::translate("TruthAndCrop", "Input File", 0));
         outFile->setText(QApplication::translate("TruthAndCrop", "Output Path", 0));
-        previousBtn->setText(QAp
+        previousBtn->setText(QApplication::translate("TruthAndCrop", "Previous Image"
