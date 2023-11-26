@@ -453,4 +453,5 @@ public:
         outFile->setText(QApplication::translate("TruthAndCrop", "Output Path", 0));
         previousBtn->setText(QApplication::translate("TruthAndCrop", "Previous Image", 0));
         nextBtn->setText(QApplication::translate("TruthAndCrop", "Next Image", 0));
-        label_5->setText(QApplication::translate("Tr
+        label_5->setText(QApplication::translate("TruthAndCrop", "Choose class", 0));
+        groupBox->setTitle(QString());
