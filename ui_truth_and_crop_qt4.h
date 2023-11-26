@@ -456,4 +456,5 @@ public:
         label_5->setText(QApplication::translate("TruthAndCrop", "Choose class", 0));
         groupBox->setTitle(QString());
         groupBox_2->setTitle(QString());
-        groupBox_3->setTitl
+        groupBox_3->setTitle(QString());
+        label_9->setText(QApplication::translate(
