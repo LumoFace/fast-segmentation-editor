@@ -455,3 +455,5 @@ public:
         nextBtn->setText(QApplication::translate("TruthAndCrop", "Next Image", 0));
         label_5->setText(QApplication::translate("TruthAndCrop", "Choose class", 0));
         groupBox->setTitle(QString());
+        groupBox_2->setTitle(QString());
+        groupBox_3->setTitl
