@@ -457,4 +457,9 @@ public:
         groupBox->setTitle(QString());
         groupBox_2->setTitle(QString());
         groupBox_3->setTitle(QString());
-        label_9->setText(QApplication::translate(
+        label_9->setText(QApplication::translate("TruthAndCrop", "Mode:", 0));
+    } // retranslateUi
+
+};
+
+namespace U
