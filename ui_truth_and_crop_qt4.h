@@ -464,3 +464,8 @@ public:
 
 namespace Ui {
     class TruthAndCrop: public Ui_TruthAndCrop {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // TRUTH_AND_CR
