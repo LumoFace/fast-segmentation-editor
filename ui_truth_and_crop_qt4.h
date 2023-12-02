@@ -462,4 +462,5 @@ public:
 
 };
 
-namespace U
+namespace Ui {
+    class TruthAndCrop: public Ui_TruthAndCrop {};
