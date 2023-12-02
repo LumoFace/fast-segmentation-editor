@@ -468,4 +468,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // TRUTH_AND_CR
+#endif // TRUTH_AND_CROP_QT4SA2743_H
