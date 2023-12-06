@@ -5,3 +5,10 @@ This project is a handy and quick user-interface application for ground-truth re
 ![sample](images/sample.png)
 
 ### Dependencies
+
++ `python 3.4`
++ `pyqt 4.x`
++ `opencv 3.x`
++ `numpy 1.11.x`
++ `colorama 0.3`
++ `nat
