@@ -11,4 +11,7 @@ This project is a handy and quick user-interface application for ground-truth re
 + `opencv 3.x`
 + `numpy 1.11.x`
 + `colorama 0.3`
-+ `nat
++ `natsort=5.0.x`
++ `scikit-image 0.12.x`
+
+If Anaconda environment is your preferenc
