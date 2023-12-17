@@ -14,4 +14,9 @@ This project is a handy and quick user-interface application for ground-truth re
 + `natsort=5.0.x`
 + `scikit-image 0.12.x`
 
-If Anaconda environment is your preference, do consider using the given `environment.yml` file with `conda env create -f environment.yml`. This will result in the formation of a virtual enviro
+If Anaconda environment is your preference, do consider using the given `environment.yml` file with `conda env create -f environment.yml`. This will result in the formation of a virtual environment named `tnc-py34`.
+
+### How to Use
+
+```bash
+source
