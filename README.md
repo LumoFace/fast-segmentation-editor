@@ -19,4 +19,8 @@ If Anaconda environment is your preference, do consider using the given `environ
 ### How to Use
 
 ```bash
-source
+source activate tnc-py34
+python truth_and_crop.py
+```
+
+The various but
