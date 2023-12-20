@@ -23,4 +23,5 @@ source activate tnc-py34
 python truth_and_crop.py
 ```
 
-The various but
+The various button functionalities include:
++ __Input File__ - Browse to load an image f
