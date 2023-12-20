@@ -24,4 +24,5 @@ python truth_and_crop.py
 ```
 
 The various button functionalities include:
-+ __Input File__ - Browse to load an image f
++ __Input File__ - Browse to load an image file.
++ __Output Path__ - Browse to the root folder where output should b
