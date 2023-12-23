@@ -30,4 +30,4 @@ The various button functionalities include:
 + __Refresh__ - Discards changes.
 + __Crop__ - Toggles between annotation mode and cropping mode.
 + __Toggle__ - Toggles annotations on and off to enhance raw image visibility. SLIC is only executed for the first toggle, subsequent toggles are relatively faster.
-+ __Save__ - To write all cropped images an
++ __Save__ - To write all cropped images and masks into appropriate subfolders under the path specified by 'Output Path'.
