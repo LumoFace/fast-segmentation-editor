@@ -29,4 +29,4 @@ The various button functionalities include:
 + __Previous/Next Image__ - If more images are found in the same folder as the Input File, one can jump between images with these buttons.
 + __Refresh__ - Discards changes.
 + __Crop__ - Toggles between annotation mode and cropping mode.
-+ 
++ __Toggle__ - Toggles annotations on and off to enhance raw image visib
